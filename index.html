@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio Project</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<article> 
+		<header class="header">		
+			<div class="header_inner">
+				<img class="title_logo" src="images/ULogo.png" alt="Udacity Logo">
+				<div class="title">
+					<h1>JANE DOETTE</h1>
+					<h3>FRONT-END NINJA</h3>			
+				</div>
+			</div>
+		</header>
+
+		<!--seperating line between header and main page-->	
+		<div class="break_line"><hr></div>
+					
+		<section class="middle_image">
+				<img class="middle_pic" src="images/middle.png" alt="middle image">
+		</section>
+		
+		<section class="category"> 
+				<h2 class="text_muted">&nbsp;&nbsp;Featured Work</h2>
+		</section>
+		
+		<section class="featured_work">				
+			<div class="featured appify">
+				<img class="project_pic img-responsive" src="images/appify.png" alt="Appify picture" data-toggle="modal" data-target="#project1">
+				<h4>APPIFY</h4>
+				<p><a class="portfolio-link" href="#">http://github.com/udacity/Appify/</a></p>
+			</div>
+			<div class="featured sunflower">
+				<img class="project_pic img-responsive" src="images/sunflower.png" alt="Sunflower picture" data-toggle="modal" data-target="#project2">
+				<h4>SUNFLOWER</h4>
+				<p><a class="portfolio-link" href="#">http://github.com/udacity/Sunflower/</a></p>
+
+			</div>
+			<div class="featured bokeh">
+				<img class="project_pic img-responsive" src="images/bokeh.png" alt="Bokeh picture" data-toggle="modal" data-target="#project3">
+				<h4>BOKEH</h4>
+				<p><a class="portfolio-link" href="#">http://github.com/udacity/Bokeh/</a></p>					
+			</div>				
+		</section>		
+		
+	</article>
+
+	<!--modal-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel1">Project1 - APPIFY</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/appify.png" alt="appify image">
+            The project will be stored on http://github.com/udacity/Appify/
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel2">Project2 - SUNFLOWER</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/sunflower.png" alt="sunflower image">
+            The project will be stored on http://github.com/udacity/Sunflower/
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel3">Project3 - BOKEH</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/bokeh.png" alt="bokeh image">
+            The project will be stored on http://github.com/udacity/Bokeh/
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>	
+</body>
+</html>
