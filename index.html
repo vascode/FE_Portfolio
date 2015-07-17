@@ -1,109 +1,128 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Portfolio Project</title>
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">	
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-</head>
-<body>
-	<article> 
-		<header class="header">		
-			<div class="header_inner">
-				<img class="title_logo" src="images/ULogo.png" alt="Udacity Logo">
-				<div class="title">
-					<h1>JANE DOETTE</h1>
-					<h3>FRONT-END NINJA</h3>			
-				</div>
-			</div>
-		</header>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>Portfolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <script src="js/jquery-2.1.4.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
 
-		<!--seperating line between header and main page-->	
-		<div class="break_line"><hr></div>
-					
-		<section class="middle_image">
-				<img class="middle_pic" src="images/middle.png" alt="middle image">
-		</section>
-		
-		<section class="category"> 
-				<h2 class="text_muted">&nbsp;&nbsp;Featured Work</h2>
-		</section>
-		
-		<section class="featured_work">				
-			<div class="featured appify">
-				<img class="project_pic img-responsive" src="images/appify.png" alt="Appify picture" data-toggle="modal" data-target="#project1">
-				<h4>APPIFY</h4>
-				<p><a class="portfolio-link" href="#">http://github.com/udacity/Appify/</a></p>
-			</div>
-			<div class="featured sunflower">
-				<img class="project_pic img-responsive" src="images/sunflower.png" alt="Sunflower picture" data-toggle="modal" data-target="#project2">
-				<h4>SUNFLOWER</h4>
-				<p><a class="portfolio-link" href="#">http://github.com/udacity/Sunflower/</a></p>
-
-			</div>
-			<div class="featured bokeh">
-				<img class="project_pic img-responsive" src="images/bokeh.png" alt="Bokeh picture" data-toggle="modal" data-target="#project3">
-				<h4>BOKEH</h4>
-				<p><a class="portfolio-link" href="#">http://github.com/udacity/Bokeh/</a></p>					
-			</div>				
-		</section>		
-		
-	</article>
-
-	<!--modal-->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel1">Project1 - APPIFY</h4>
+    </head>
+    <body>
+      <div class="container">
+        <!-- header -->
+        <div class="row header">
+          <div class="col-xs-3 title-logo">
+            <a href="http://vascode.tk/"><img class="logo" src="images/logo.jpg" alt="Logo"></a>
           </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images/appify.png" alt="appify image">
-            The project will be stored on http://github.com/udacity/Appify/
+          <div class="col-xs-9 text-right">
+            <h1 class="title-super text-thin">In Central America</h1>
+            <h3>Panama, Costa Rica</h3>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+
+        <!--seperating between header and main information-->
+        <hr>
+
+        <!--bottom 3 images -->
+        <div class="row">
+          <div class="col-sm-12">
+            <img class="img-responsive" src="images/middle.jpg" alt="middle image">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="text-muted left-space">Pictures</h2>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-12 col-sm-4">
+            <img class="img-responsive" src="images/beach.jpg" alt="beach around Bocas Del Toro" data-toggle="modal" data-target="#project1">
+            <h4 class="description">Bocas Del Toro</h4>
+            <p>
+              <a class="portfolio-link" href="https://github.com/vascode/FE_Portfolio/tree/submitted2_modified">link to project</a>
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <img class="img-responsive" src="images/zipline.jpg"  alt="zip line at Monteverde" data-toggle="modal" data-target="#project2">
+            <h4 class="description">Monteverde</h4>
+            <p>
+              <a class="portfolio-link" href="https://github.com/vascode/FE_Portfolio/tree/submitted2_modified">link to project</a>
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <img class="img-responsive" src="images/OnBoat.jpg" alt="On Boat" data-toggle="modal" data-target="#project3">
+            <h4 class="description">Almirante to Bocas</h4>
+            <p class="link">
+              <a class="portfolio-link" href="https://github.com/vascode/FE_Portfolio/tree/submitted2_modified">link to project</a>
+            </p>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel2">Project2 - SUNFLOWER</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images/sunflower.png" alt="sunflower image">
-            The project will be stored on http://github.com/udacity/Sunflower/
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <!-- goto top icon-->
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <a href="#" class="back-to-top">
+            <i class="fa fa-arrow-circle-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--modal-->
+      <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel1">Project1 - Beach</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="images/beach.jpg" alt="beach around Bocas Del Toro">
+              The project is stored in https://github.com/vascode/FE_Portfolio/tree/submitted2_modified
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel3">Project3 - BOKEH</h4>
-          </div>
-          <div class="modal-body">
-            <img class="img-responsive" src="images/bokeh.png" alt="bokeh image">
-            The project will be stored on http://github.com/udacity/Bokeh/
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel2">Project2 - Zipline</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="images/zipline.jpg" alt="zip line at Monteverde">
+              The project is stored in https://github.com/vascode/FE_Portfolio/tree/submitted2_modified
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>	
-</body>
-</html>
+
+      <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel3">Project3 - On the Boats</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" src="images/OnBoat.jpg" alt="On Boat">
+              The project is stored in https://github.com/vascode/FE_Portfolio/tree/submitted2_modified
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
