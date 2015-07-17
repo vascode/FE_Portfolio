@@ -55,9 +55,6 @@ hr {
 	display: none;
 }
 
-.text-center {
-	text-align: cetner;
-}
 
 
 @media screen and (max-width: 768px) {
@@ -75,8 +72,8 @@ hr {
 	}
 
 	.back-to-top {
-		display: inline-block;		
-		font-size: 40px;		
+		display: inline-block;
+		font-size: 40px;
 		vertical-align: bottom;
 	}
 
